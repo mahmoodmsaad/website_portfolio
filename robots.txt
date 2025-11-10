@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://mahmoodmsaad.github.io/website_portfolio/sitemap.xml
