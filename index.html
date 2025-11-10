@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M Saad Mahmood | Computational Materials Scientist</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">M Saad Mahmood</div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#research" class="nav-link">Research</a></li>
+                <li><a href="#publications" class="nav-link">Publications</a></li>
+                <li><a href="#development" class="nav-link">Software</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#timeline" class="nav-link">Timeline</a></li>
+            </ul>
+            <button class="theme-toggle" id="themeToggle">🌙</button>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <h1 class="hero-title">Computational Materials Scientist</h1>
+            <p class="hero-subtitle">Advancing Sustainable Energy Through Computational Chemistry</p>
+            <div class="hero-buttons">
+                <a href="#research" class="btn btn-primary">View Research</a>
+                <a href="#development" class="btn btn-secondary">Software Projects</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>M Saad Mahmood</h3>
+                    <p>PhD Candidate in Physics & Chemistry | Computational Materials Scientist</p>
+                    <p style="margin-top: 1rem; color: var(--text-light);">As a scientific researcher, I apply computational chemistry to advance sensing and photovoltaic applications, essential for sustainable energy and environmental solutions. My expertise spans theoretical and computational chemistry, machine learning, and data analysis for designing and optimizing novel materials.</p>
+                    <div class="contact-links">
+                        <a href="mailto:mahmoodmsaad9@gmail.com" class="contact-link">📧 Email</a>
+                        <a href="https://www.linkedin.com/in/m-saad-mahmood-2288b2210" target="_blank" class="contact-link">💼 LinkedIn</a>
+                        <a href="https://github.com/mahmoodmsaad" target="_blank" class="contact-link">💻 GitHub</a>
+                        <a href="https://wa.me/923430788403" target="_blank" class="contact-link">💬 WhatsApp</a>
+                    </div>
+                    <div class="stats-grid">
+                                <div class="stat-card">
+                            <h4 id="yearsResearch">4+</h4>
+                            <p>Years Research</p>
+                        </div>
+                        <div class="stat-card">
+                            <h4>3</h4>
+                            <p>Publications</p>
+                        </div>
+                        <div class="stat-card">
+                            <h4>4+</h4>
+                            <p>Software Projects</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="research" class="section bg-alt">
+        <div class="container">
+            <h2 class="section-title">Research Areas</h2>
+            <div class="research-grid">
+                <div class="research-card">
+                    <h3>🔬 Computational Chemistry</h3>
+                    <p>Ab initio simulations and DFT studies for molecular modeling, material design, and property prediction. Specializing in sensing applications using novel 2D materials like graphitic carbon nitride (C6N8) and phosphorene.</p>
+                </div>
+                <div class="research-card">
+                    <h3>☀️ Photovoltaic Applications</h3>
+                    <p>Designing and optimizing hole transporting materials for perovskite solar cells. Rational design of methoxy diphenylamine-substituted fluorene-based materials to enhance solar cell efficiency.</p>
+                </div>
+                <div class="research-card">
+                    <h3>💊 Drug Delivery Systems</h3>
+                    <p>Developing novel 2D phosphorene-based drug delivery systems for anti-HIV therapeutics. Computational modeling of drug encapsulation using nanocages like B12N12 for enhanced therapeutic effects.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="publications" class="section">
+        <div class="container">
+            <h2 class="section-title">Publications & Projects</h2>
+            <div class="activity-tracker">
+                <div class="pub-form">
+                    <h3>Add Publication/Project</h3>
+                    <input type="text" id="pubTitle" placeholder="Title" class="input-field">
+                    <input type="text" id="pubAuthors" placeholder="Authors" class="input-field">
+                    <input type="text" id="pubVenue" placeholder="Venue/Conference/Journal" class="input-field">
+                    <input type="text" id="pubYear" placeholder="Year" class="input-field">
+                    <input type="url" id="pubLink" placeholder="Link (optional)" class="input-field">
+                    <button onclick="addPublication()" class="btn btn-primary">Add Publication</button>
+                </div>
+                <div class="activity-list">
+                    <h3>Publications List</h3>
+                    <div id="publicationsList" class="publications-list"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="development" class="section bg-alt">
+        <div class="container">
+            <h2 class="section-title">Software Development Projects</h2>
+            <div class="dev-intro">
+                <p>Developing Python applications for chemical analysis and computational chemistry workflows</p>
+            </div>
+            <div class="dev-timeline">
+                <div class="dev-project">
+                    <div class="project-status completed">✓ Completed</div>
+                    <h3>⚛️ Reactivity Index Calculator</h3>
+                    <p class="project-period">2022 - 2024</p>
+                    <p>Python application for automated chemical reactivity analysis. Calculates key reactivity descriptors including HOMO-LUMO gaps, chemical potential, hardness, and electrophilicity index for molecular systems.</p>
+                    <div class="project-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">Computational Chemistry</span>
+                        <span class="tag">DFT Analysis</span>
+                    </div>
+                </div>
+                
+                <div class="dev-project">
+                    <div class="project-status completed">✓ Completed</div>
+                    <h3>🔬 NBO Orbital Processing Tool</h3>
+                    <p class="project-period">2022 - 2024</p>
+                    <p>Advanced application for processing Natural Bond Orbital (NBO) data. Automates the extraction, analysis, and visualization of orbital interactions, charge transfer, and electronic structure properties.</p>
+                    <div class="project-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">NBO Analysis</span>
+                        <span class="tag">Data Processing</span>
+                    </div>
+                </div>
+                
+                <div class="dev-project">
+                    <div class="project-status in-progress">⚡ In Progress</div>
+                    <h3>💊 Drug Solubility Predictor</h3>
+                    <p class="project-period">2024 - Present</p>
+                    <p>Machine learning application for predicting aqueous solubility of drug-like molecules. Integrates computational chemistry descriptors with ML models to enhance drug development workflows.</p>
+                    <div class="project-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">Machine Learning</span>
+                        <span class="tag">Drug Design</span>
+                        <span class="tag">QSAR</span>
+                    </div>
+                </div>
+                
+                <div class="dev-project">
+                    <div class="project-status planned">📋 Planned</div>
+                    <h3>📊 Computational Chemistry Workflow Automation</h3>
+                    <p class="project-period">Future Development</p>
+                    <p>Comprehensive suite for automating DFT calculations, result analysis, and visualization. Will streamline the entire computational chemistry pipeline from input preparation to publication-ready outputs.</p>
+                    <div class="project-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">Automation</span>
+                        <span class="tag">Visualization</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section bg-alt">
+        <div class="container">
+            <h2 class="section-title">Skills & Expertise</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>🔬 Computational Methods</h3>
+                    <ul>
+                        <li>Density Functional Theory (DFT)</li>
+                        <li>Ab Initio Simulations</li>
+                        <li>Molecular Modeling</li>
+                        <li>NBO Analysis</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>💻 Programming & Tools</h3>
+                    <ul>
+                        <li>Python Development</li>
+                        <li>Machine Learning</li>
+                        <li>Data Analysis (NumPy, Pandas)</li>
+                        <li>Git & GitHub</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>📊 Characterization</h3>
+                    <ul>
+                        <li>ARPES</li>
+                        <li>X-ray Photoelectron Spectroscopy (XPS)</li>
+                        <li>STEM</li>
+                        <li>Surface Analysis</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>🎓 Research Skills</h3>
+                    <ul>
+                        <li>Scientific Writing</li>
+                        <li>Data Visualization</li>
+                        <li>Project Management</li>
+                        <li>Collaborative Research</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="timeline" class="section">
+        <div class="container">
+            <h2 class="section-title">Academic & Professional Timeline</h2>
+            <div class="timeline-container">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h4>🎓 PhD in Physics & Chemistry</h4>
+                        <span class="timeline-date">October 2024 - Present</span>
+                        <p>University of Trieste, Italy - Computational-Experimental Collaboration on Curved 2D Materials</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h4>🔬 Materials Engineer</h4>
+                        <span class="timeline-date">January 2025 - Present</span>
+                        <p>Research Group of Dr. Rederik Michael Schiller, San Sebastián, Spain - Advanced surface characterization and ab initio simulations</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h4>💻 Python App Developer</h4>
+                        <span class="timeline-date">May 2022 - Present</span>
+                        <p>Developing chemical analysis applications: Reactivity Index Calculator & NBO Orbital Processing Tool</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h4>🎓 Master of Philosophy in Chemistry</h4>
+                        <span class="timeline-date">September 2021 - December 2023</span>
+                        <p>University of Agriculture Faisalabad - GPA: 3.3/4.0<br>Thesis: Sensing ability of C6N8 to detect NOx using DFT</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h4>🔬 Masters-Level Research</h4>
+                        <span class="timeline-date">January 2022 - February 2024</span>
+                        <p>Computational chemistry research under Dr. Javed Iqbal - Modeling and simulation of complex organic molecules</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h4>🎓 BS in Chemistry</h4>
+                        <span class="timeline-date">September 2016 - September 2023</span>
+                        <p>Government College University Faisalabad - GPA: 3.71/4.0</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; <span id="currentYear"></span> M Saad Mahmood. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <div id="editModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h3>Edit Chart Data</h3>
+            <div id="modalBody"></div>
+            <button onclick="saveChartData()" class="btn btn-primary">Save Changes</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
